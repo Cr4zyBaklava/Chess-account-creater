@@ -1,25 +1,25 @@
 # Chess-account-creater
 
-Creates accounts for chess.com
+Creates accounts for chess.com, this code writed by CrazyBaklava. 
 
-## Kurulum
+## Setup
 
 pip install selenium
 Download the ChromeDriver version compatible with your Chrome browser from this link https://googlechromelabs.github.io/chrome-for-testing/
 
-### Gereksinimler
+### Requirements
 
-- selenium library
+- Selenium library
 - Webdriver
 
-### Adımlar
+### Steps
 
-1. Bu repository'yi klonlayın.
+1. Clone this repohistory.
    ```bash
    git clone https://github.com/Cr4zyBaklava/Chess-account-creator.git
-2. Selenium kütüphanesini indirin.
+2. Install selenium library.
    ```bash
    pip install selenium
-3. Python dosyasını çalıştırın.
+3. Run python file.
    ```bash
    python chess_create_acc.py
