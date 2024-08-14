@@ -52,7 +52,7 @@ def create_account(email, password, username):
         chrome_options = Options()
         chrome_options.headless = False
         chrome_options.add_argument("--log-level=3")
-        service = ChromeService(executable_path=r"C:\Users\alper\Downloads\chromedriver.exe")
+        service = ChromeService(executable_path="chromedriver.exe")
         browser = webdriver.Chrome(service=service, options=chrome_options)
         browser.get("https://www.chess.com/register")
         click(browser, '/html/body/div[1]/div/div[3]/main/div/div/button')
@@ -69,13 +69,13 @@ def create_account(email, password, username):
         click(browser, '/html/body/div[1]/div/div[3]/div/div/div/div/button[3]')
         click(browser, '/html/body/div[1]/div/div[3]/div/div/div/div/button[2]')
 
-        acc_path = r"C:\Users\alper\OneDrive\Masaüstü\codes\Python ornekleri\selenium\chess\chess_accs.txt"
+        acc_path = "chess_accs.txt"
         with open(acc_path, "a", encoding="utf-8") as file:
             file.write(f"{email} {password} {username}\n")
 
-        print("Hesap başarıyla oluşturuldu.")
+        print("Account has been created succesfully.")
     except Exception as e:
-        print("Bilinmeyen bir hata meydana geldi. Hesap oluşturulamadı.", e)
+        print("An unknown error occurred", e)
 
 
 email, password, username = generate_random()
