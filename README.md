@@ -21,5 +21,5 @@ Download the ChromeDriver version compatible with your Chrome browser from this 
    ```bash
    pip install selenium
 3. Python dosyasını çalıştırın.
-  ```bash
+   ```bash
    python chess_create_acc.py
