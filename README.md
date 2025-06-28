@@ -1,6 +1,6 @@
 # Chess-account-creater
 
-Creates accounts for chess.com, this code writed by CrazyBaklava. 
+Creates accounts for chess.com, this code wrote by schop3r. 
 
 ## Setup
 
